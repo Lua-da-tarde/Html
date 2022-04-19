@@ -1,0 +1,63 @@
+<html>
+
+	<head>
+		<meta charset= "utf-8">
+		<title> Formulário </title>
+	</head>
+
+	<body style="background-color:slategrey ;color:antiquewhite;">
+
+		<h1> Formulário - Cadastro de Funcionários </h1>
+
+		<form>
+
+			<label for="nome">Nome:</label><br>
+			<input type="text" name="nome" id="nome" size="50" maxlenght="20" minlenght="3" required placeholder="Digite seu nome" spellcheck>
+
+			<br><br>
+
+			<label for="idade">Idade:</label><br>
+			<input type="number" name="idade" id="idade" size="2"  min="18" max="60" step="2" required placeholder="Idade">
+
+			<br><br>
+
+			<label for="cargo">Cargo:</label><br>
+			<input type="text" name="cargo" id="cargo" value="Aluno" readonly size="5">
+
+			<br><br>
+
+			<label for="senha">Senha:</label><br>
+			<input type="password" name="senha" id="senha" placeholder="Digite a sua senha" minlenght="8" maxlenght="10" required>
+
+			<br><br>
+
+			<label for="sexo">Sexo:</label><br>
+			M <input type="radio" name="sexo" value="Masc">
+			F <input type="radio" name="sexo" value="Fem" checked>
+
+			<br><br>
+			<label>Períodos de aula: </label><br>
+			<input type="checkbox" name="manhã" checked> Manhã
+			<input type="checkbox" name="tarde"> Tarde
+			<input type="checkbox" name="noite"> Noite
+
+			<br><br>
+			Curso:<br>
+			<select name="curso">
+				<option></option>
+				<option value="Informática">Informática</option>
+				<option value="Edificações">Edificações</option>
+				<option value="Enfermagem">Enfermagem</option>
+				<option value="Geomática">Geomática</option>
+				<option value="Mecânica">Mecânica</option>
+			</select>
+
+			<br><br>
+			<br><br>
+
+			<input type="submit" name="btnEnviar" value="Enviar">
+
+		</form>
+	
+	</body>
+</html>
