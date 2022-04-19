@@ -11,8 +11,52 @@
 
 		<form>
 
+			<fieldset>
+			<legend>Dados Pessoais</legend>
 			<label for="nome">Nome:</label><br>
 			<input type="text" name="nome" id="nome" size="50" maxlenght="20" minlenght="3" required placeholder="Digite seu nome" spellcheck>
+
+			<br><br>
+			<label for="foto">Foto 3x4:</label><br>
+			<input type="file" name="foto" id="foto" accept="image/png, image/jpg">
+
+			<br><br>
+			<label for="dataNasc">Data de Nascimento:</label><br>
+			<input type="date" id="dataNasc" name="dataNasc">
+
+			<br><br>
+			<label for="email">E-mail:</label><br>
+			<input type="email" id="email" name="email" required>
+
+			<br><br>
+			<label for="dataNasc">Data e hora do cadastro:</label><br>
+			<input type="datetime-local" id="dataHoraCad" name="dataHoraCad">
+
+			<br><br>
+			<label for="dataNasc">Mês de início:</label><br>
+			<input type="month" id="mesInicio" name="mesInicio">
+
+			<br><br>
+			<label for="dataNasc">Semana de início:</label><br>
+			<input type="week" id="semanaInicio" name="semanaInicio">
+
+			<br><br>
+			Signo:<br>
+			<select name="curso">
+				<option></option>
+				<option value="Aries">Áries</option>
+				<option value="Touro">Touro</option>
+				<option value="Gemeos">Gêmeos</option>
+				<option value="Cancer">Câncer</option>
+				<option value="Leao">Leão</option>
+				<option value="Virgem">Virgem</option>
+				<option value="Libra">Libra</option>
+				<option value="Escorpiao">Escorpião</option>
+				<option value="Sagitario">Sagitário</option>
+				<option value="Capricornio">Capricórnio</option>
+				<option value="Aquario">Aquario</option>
+				<option value="Peixes">Peixes</option>
+			</select>
 
 			<br><br>
 
@@ -22,7 +66,7 @@
 			<br><br>
 
 			<label for="cargo">Cargo:</label><br>
-			<input type="text" name="cargo" id="cargo" value="Aluno" readonly size="5">
+			<input type="text" name="cargo" id="cargo" value="Professor" readonly size="5">
 
 			<br><br>
 
@@ -36,10 +80,24 @@
 			F <input type="radio" name="sexo" value="Fem" checked>
 
 			<br><br>
+			<label for="corPref">Cor preferida:</label><br>
+			<input type="color" id="corPref" name="corPref" value="#FF00DD">
+
+			</fieldset>
+
+			<br>
+			<fieldset>
+			<legend>Dados Profissionais</legend>
 			<label>Períodos de aula: </label><br>
 			<input type="checkbox" name="manhã" checked> Manhã
 			<input type="checkbox" name="tarde"> Tarde
 			<input type="checkbox" name="noite"> Noite
+
+			<br><br>
+			<label>Horário de trabalho:</label><br>
+			De: <input type="time" id="inicioTrab" name="inicioTrab">
+			a: <input type="time" id="fimTrab" name="fimTrab">
+
 
 			<br><br>
 			Curso:<br>
@@ -51,6 +109,17 @@
 				<option value="Geomática">Geomática</option>
 				<option value="Mecânica">Mecânica</option>
 			</select>
+
+			<br><br>
+			<label>Disciplinas <small>(ctrl+click para selecionar vários)</small></label>
+			<br><br>
+			<select name="disciplinas" id="disciplinas" size="3" multiple>
+				<option value="BD">Banco de Dados</option>
+				<option value="LogProg" required>Lógica de Programação</option>
+				<option value="DAW">Des. Ap. Web</option>
+			</select>
+
+			</fieldset>
 
 			<br><br>
 			<br><br>
