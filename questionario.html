@@ -1,0 +1,54 @@
+<html>
+
+	<head>
+		<meta charset= "utf-8">
+		<title> Formulário </title>
+	</head>
+
+	<body style="background-color:slategrey; color:antiquewhite;">
+
+		<h1>Questionário - Consulta sobre a volta às aulas</h1>
+
+		<form>
+		<fieldset>
+		<legend>Dados Pessoais</legend>
+		
+		<br>
+		<label for="nome">Nome Completo:</label><br>
+		<input type="text" name="nomec" id="nomec" size="50" maxlenght="50" minlenght="3" required placeholder="Digite seu nome" spellcheck>
+
+		<br><br>
+		Selecione seu ano escolar:<br>
+		<select name="serie">
+			<option></option>
+			<option value="1ano">1º Ano</option>
+			<option value="2ano">2º Ano</option>
+			<option value="3ano">3º Ano</option>
+		</select>
+
+		<br><br>
+		<label>Horário de aula:</label><br>
+		De: <input type="time" id="inicioAula" name="inicioAula">
+		a: <input type="time" id="fimAula" name="fimAula"> 
+
+		<br><br>
+		<label for="ead">Sua satisfação com o sistema EAD <small>(de 0 a 10):</small></label><br>
+		<input type="range" id="ead" name="exp" min="0" max="10" value="0">
+
+		<br><br>
+		<label for="pres">Sua satisfação com o sistema presencial <small>(de 0 a 10):</small></label><br>
+		<input type="range" id="pres" name="exp" min="0" max="10" value="0">
+
+		<br><br>
+		Deixe uma sugestão de como podemos melhorar:<br>
+		<textarea rows="5" cols="60" spellcheck="true" maxlenght="100">
+		</textarea>
+
+		</fieldset>
+
+		<br>
+		<input type="submit" name="btnEnviar" value="Enviar">
+
+		</form>
+	</body>
+</html>
