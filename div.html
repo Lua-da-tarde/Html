@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<meta charset= "utf-8">
+		<title> Span e div </title>
+		
+		<style type="text/css">
+			#menu {
+				width:  100%;
+				background-color: black;
+				color:  antiquewhite;
+			}
+			.conteudo {
+				border:  2px dotted;
+				border-radius: 1px;
+				margin:  1;
+				padding:  1;
+				opacity: 80%;
+				width: 95%;
+				border-color: black;
+				transition: border-color, 0.5s;
+				transition: opacity, 0.5s;
+				transition: border-radius, 0.5s
+			}
+			.conteudo:hover{
+				background-color: #F9E9EC;
+				color: black;
+				border-radius: 2px;
+				border-color: antiquewhite;
+				opacity: 100%;
+				transition: all, 0.2s;
+			}
+			.texto {
+				font-weight: bold;
+			}
+			.texto:hover {
+				color: darkblue;
+				text-decoration: underline;
+				transition:  all, 0.2s;
+			}
+		</style>
+	</head>
+
+	<body style="background-color:slategrey ;color:antiquewhite;">
+
+	<div id="menu">
+		Unicamp
+		|
+		Cotil
+	</div>
+
+	<br>
+
+	<div class="conteudo">
+		<p> Os cursos do <span class="texto">Cotil</span> são: </p>
+		<ul>
+			<li>Desenvolvimento de Sistemas</li>
+			<li>Edificações</li>
+			<li>Enfermagem</li>
+			<li>Geodésia e Cartografia</li>
+			<li>Mecânica</li>
+			<li>Qualidade</li>
+		</ul>
+	</div>
+
+	<br>
+	
+	<div class="conteudo">
+		<p> No curso de <span class="texto">Desenvolvimento de Sistemas</span>, você aprenderá: </p>
+		<ul>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>Javascript</li>
+		</ul>
+	</div>
+
+	</body>
+
+</html>
